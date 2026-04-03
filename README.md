@@ -83,3 +83,9 @@ Check these quickly in Vercel:
 5. Confirm latest commit is on your production branch (typically `main`).
 
 After fixing settings, trigger a **Redeploy** from the latest commit.
+
+6. Open **Deployments** and verify at least one deployment is marked **Ready**.
+7. In that deployment, click **Promote to Production** (if needed).
+8. In **Domains**, confirm `upto-code-heating-cooling.vercel.app` is attached to this project.
+
+If you still get 404, it is a Vercel project/domain linkage issue (not app code): the domain is pointing to a project with no active production deployment.
