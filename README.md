@@ -70,3 +70,16 @@ To integrate:
 ## Environment variables
 Use `.env.example` as a starter.
 
+
+
+## Vercel deployment troubleshooting (404 NOT_FOUND)
+If your production URL shows `404: NOT_FOUND`, usually no successful production deployment exists yet.
+
+Check these quickly in Vercel:
+1. **Project Root Directory** is repository root (`.`).
+2. **Framework Preset** is `Next.js`.
+3. Build command is `next build` (or default).
+4. Node version is 18+ (this project declares `>=18.18.0`).
+5. Confirm latest commit is on your production branch (typically `main`).
+
+After fixing settings, trigger a **Redeploy** from the latest commit.
