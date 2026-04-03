@@ -117,6 +117,12 @@ export const siteContent = {
     call: 'Call Now',
   },
   bookingUrl: 'https://calendly.com/your-calendly-placeholder/free-estimate',
+  sectionImages: {
+    testimonials:
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80',
+    contact:
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80',
+  },
   socialLinks: {
     facebook: 'https://facebook.com/',
     instagram: 'https://instagram.com/',

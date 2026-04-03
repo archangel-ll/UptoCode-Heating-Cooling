@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { ContactForm } from '@/components/ContactForm';
 import { siteContent } from '@/data/siteContent';
@@ -9,7 +10,16 @@ export function ContactSection() {
         <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">Request a Quote or Book an Estimate</h2>
         <div className="mt-8 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-slate-900">Local Service Area Coverage</h3>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <Image
+                src={siteContent.sectionImages.contact}
+                alt="Friendly HVAC technician discussing estimate details with homeowner"
+                className="h-48 w-full object-cover"
+                width={900}
+                height={380}
+              />
+            </div>
+            <h3 className="mt-5 text-xl font-bold text-slate-900">Local Service Area Coverage</h3>
             <p className="mt-2 text-sm text-slate-600">Serving homeowners throughout {siteContent.city} including:</p>
             <ul className="mt-3 grid grid-cols-2 gap-2 text-sm text-slate-700">
               {siteContent.serviceAreas.map((area) => (
