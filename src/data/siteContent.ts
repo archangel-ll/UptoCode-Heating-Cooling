@@ -26,6 +26,7 @@ export const siteContent = {
   province: 'Ontario',
   serviceAreas: ['Downtown Toronto', 'North York', 'Etobicoke', 'Scarborough', 'East York', 'York'],
   hero: {
+    heroBackgroundImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80',
     eyebrow: 'Trusted Toronto HVAC Specialists',
     heading: 'Professional HVAC Repairs & Installations That Respect Your Time',
     subheading:
